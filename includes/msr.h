@@ -1,0 +1,9 @@
+
+#ifndef __MSR_H__
+#define __MSR_H__
+
+#define MSR_IA32_SYSENTER_CS  0x00000174
+#define MSR_IA32_SYSENTER_ESP 0x00000175
+#define MSR_IA32_SYSENTER_EIP 0x00000176
+
+#endif

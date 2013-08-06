@@ -1,0 +1,8 @@
+boot_files/*.bin
+*.o
+*.obj
+*.obj.lst.asm
+*.lst.asm
+gfw_map.txt
+*~
+

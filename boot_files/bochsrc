@@ -1,0 +1,33 @@
+###############################################################
+# bochsrc.txt file for DLX Linux disk image.
+###############################################################
+
+# how much memory the emulated machine will have
+megs: 256
+
+# filename of ROM images
+# romimage: file=/usr/share/bochs/BIOS-bochs-latest, address=0xf0000
+romimage: file=/home/kazushi/bin/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/home/kazushi/bin/share/bochs/VGABIOS-lgpl-latest
+
+# hard disk
+# ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+# ata0-master: type=disk, path="ms0:/VM/hd10meg.img", cylinders=306, heads=4, spt=17
+
+# floppy
+floppya: 1_44="/home/kazushi/repos/gfw/boot_files/fdimage.bin", status=inserted
+boot: a
+
+# choose the boot disk.
+# boot: 
+
+# where do we send log messages?
+# log: ms0:/VM/bochsout.txt
+
+display_library: sdl
+
+# disable the mouse, since DLX is text only
+mouse: enabled=1
+
+# debug
+debug: action=ignore
